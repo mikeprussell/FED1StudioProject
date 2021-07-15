@@ -1,0 +1,23 @@
+﻿header {
+    background-color: ghostwhite;
+    color: darkgreen;
+}
+
+main {
+    background-color: ghostwhite;
+}
+
+footer {
+    background-color: indigo;
+    color: paleturquoise;
+}
+
+#sloganStyle {
+    background-color: blue;
+    color: aliceblue;
+    text-decoration: wavy;
+}
+
+.headingStyle {
+    font-weight: bold;
+}

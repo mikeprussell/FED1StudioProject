@@ -1,6 +1,7 @@
 ﻿header {
     background-color: ghostwhite;
     color: darkgreen;
+    font-size: 36x;
 }
 
 main {
@@ -16,6 +17,7 @@ footer {
     background-color: blue;
     color: aliceblue;
     text-decoration: wavy;
+    font-style: italic;
 }
 
 .headingStyle {

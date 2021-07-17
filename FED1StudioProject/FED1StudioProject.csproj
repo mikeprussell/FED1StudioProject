@@ -67,7 +67,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.html" />
     <Content Include="Contact.html" />
+    <Content Include="favicon.ico" />
+    <Content Include="images\bbh-singapore-BUK-z0LrGBo-unsplash.jpg" />
+    <Content Include="images\chris-blonk-3modkXVHGvY-unsplash.jpg" />
+    <Content Include="images\etty-fidele-VNYCIbZju0o-unsplash.jpg" />
+    <Content Include="images\icons8-literature-64.png" />
+    <Content Include="images\maria-lupan-fE5IaNta2KM-unsplash.jpg" />
+    <Content Include="images\thisisengineering-raeng-TXxiFuQLBKQ-unsplash.jpg" />
+    <Content Include="images\vince-fleming-_THUISs23CI-unsplash.jpg" />
     <Content Include="stylesheets\custom.css" />
     <Content Include="Team.html" />
     <Content Include="Classes.html" />
@@ -87,7 +96,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="images\" />
     <Folder Include="scripts\" />
   </ItemGroup>
   <PropertyGroup>

@@ -1,7 +1,18 @@
-﻿header {
+﻿@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+
+/*
+    Website custom colors
+    Light blue: #71C2FF
+*/
+
+header {
     background-color: ghostwhite;
     color: darkgreen;
     font-size: 36x;
+}
+
+body {
+    font-family: Karla
 }
 
 main {
@@ -14,12 +25,84 @@ footer {
 }
 
 #sloganStyle {
-    background-color: blue;
-    color: aliceblue;
-    text-decoration: wavy;
+    background-color: #71C2FF;
     font-style: italic;
+    color: black;
 }
 
 .headingStyle {
     font-weight: bold;
+    align-content: center;
+}
+
+nav a:hover, a:active, a:focus {
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: darkblue;
+}
+
+nav li {
+    display: inline-block;
+}
+nav ul li a {
+    padding: .10em;
+    display: block;
+    text-transform: uppercase;
+    color: black;
+}
+
+.mainWrapper {
+    padding: 1%;
+}
+
+footer {
+    padding: 3%;
+}
+
+nav ul {
+    margin: 0;
+}
+
+aside h2 {
+    padding: 2%;
+}
+
+div.galleryItem {
+    margin: 5px;
+    border: 1px solid #ccc;
+    display: inline-block; /*This is the line of code that allows the divs to line up next to each other*/
+    width: 350px;
+}
+
+    div.galleryItem:hover {
+        border: 1px solid lightsalmon;
+    }
+
+    div.galleryItem img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.galleryItem a:hover {
+        background-color: lightsalmon;
+    }
+
+#imageGallery {
+    margin: 0 auto; /*very helpful for centering content inside of an elment - this centers the element with the id of imageGallery*/
+    width: 85%;
+    text-align: center; /*this centers the content inside of the element with the id of imageGallery*/
+}
+
+#cssRightFloat {
+    float: right;
+}
+
+.clear {
+    clear: right;
+}
+
+.convertToBlock{
+    display:block
 }

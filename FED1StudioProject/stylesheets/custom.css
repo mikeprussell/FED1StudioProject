@@ -25,14 +25,15 @@ footer {
 }
 
 #sloganStyle {
-    background-color: #71C2FF;
     font-style: italic;
     color: black;
+    font-size: medium;
 }
 
 .headingStyle {
     font-weight: bold;
-    align-content: center;
+    margin: 0;
+    padding: .7%;
 }
 
 nav a:hover, a:active, a:focus {
@@ -40,17 +41,22 @@ nav a:hover, a:active, a:focus {
 }
 
 nav li:hover {
-    background-color: darkblue;
+    background-color: #71C2FF;
 }
 
 nav li {
     display: inline-block;
 }
+
 nav ul li a {
-    padding: .10em;
+    padding: .50em;
     display: block;
     text-transform: uppercase;
     color: black;
+}
+
+.selected {
+    background-color: #71C2FF;
 }
 
 .mainWrapper {
@@ -72,8 +78,9 @@ aside h2 {
 div.galleryItem {
     margin: 5px;
     border: 1px solid #ccc;
-    display: inline-block; /*This is the line of code that allows the divs to line up next to each other*/
     width: 350px;
+    /*text-align: center;*/
+    position: center;
 }
 
     div.galleryItem:hover {
@@ -89,20 +96,52 @@ div.galleryItem {
         background-color: lightsalmon;
     }
 
-#imageGallery {
-    margin: 0 auto; /*very helpful for centering content inside of an elment - this centers the element with the id of imageGallery*/
+.centerContent {
+    margin: 0 auto;
     width: 85%;
-    text-align: center; /*this centers the content inside of the element with the id of imageGallery*/
 }
 
-#cssRightFloat {
+#cssRightColumn {
+    width: 75%;
     float: right;
+
+}
+
+#cssFloatLeft {
+    float: left;
+    padding-right: 25px;
 }
 
 .clear {
-    clear: right;
+    clear: both;
 }
 
-.convertToBlock{
-    display:block
+.setWidth {
+    width: 50%
+}
+
+#cssRightColumn {
+    width: 25%;
+    float: right;
+}
+
+#cssLeftColumn {
+    width: 75%;
+    float: left;
+    border-right: 1px dashed teal;
+    box-sizing: border-box;
+    /*Changes the way width and height are figured. With border-box you are saying that the 75% width includes not only content but also padding & border*/
+}
+
+.teamNav {
+    display: block;
+    padding-left: 75px;
+}
+
+    .teamNav li {
+        padding: .50em;
+    }
+
+aside h2{
+    padding: 25px;
 }

@@ -67,16 +67,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.html" />
+    <Content Include="Resources.html" />
     <Content Include="Contact.html" />
     <Content Include="favicon.ico" />
-    <Content Include="images\bbh-singapore-BUK-z0LrGBo-unsplash.jpg" />
-    <Content Include="images\chris-blonk-3modkXVHGvY-unsplash.jpg" />
-    <Content Include="images\etty-fidele-VNYCIbZju0o-unsplash.jpg" />
+    <Content Include="images\BillDauterive.jpg" />
     <Content Include="images\icons8-literature-64.png" />
-    <Content Include="images\maria-lupan-fE5IaNta2KM-unsplash.jpg" />
-    <Content Include="images\thisisengineering-raeng-TXxiFuQLBKQ-unsplash.jpg" />
-    <Content Include="images\vince-fleming-_THUISs23CI-unsplash.jpg" />
+    <Content Include="images\LuannePlatter.jpg" />
+    <Content Include="images\NancyGribble.jpg" />
+    <Content Include="images\PeggyHill.jpg" />
+    <Content Include="images\RogerSack.jpg" />
+    <Content Include="images\RustyShackleford.jpg" />
     <Content Include="stylesheets\custom.css" />
     <Content Include="Team.html" />
     <Content Include="Classes.html" />

@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\EthicsPic.jpg" />
     <Content Include="Resources.html" />
     <Content Include="Contact.html" />
     <Content Include="favicon.ico" />

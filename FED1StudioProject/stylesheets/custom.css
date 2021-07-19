@@ -145,3 +145,80 @@ div.galleryItem {
 aside h2{
     padding: 25px;
 }
+
+table, tr, td, th {
+    border: 1px solid black;
+    border-collapse: collapse; /*avoids duplicate adjacent borders inside of a table.*/
+}
+
+table {
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+th {
+    font-weight: bold;
+    text-align: center;
+}
+
+td, th {
+    padding: .3em;
+}
+
+thead {
+    background-color: #96F3FA;
+}
+
+tfoot {
+    background-color: teal;
+}
+
+    tfoot tr, tfoot td {
+        border: 0;
+    }
+
+tbody tr:nth-child(even) {
+    background-color: lightsalmon;
+}
+
+.cards {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+    grid-gap: 50px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 235px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 2px;
+    width: 235px;
+    height: 300px;
+}
+
+.card-text {
+    word-wrap: break-word;
+    padding: 0px 15px 0px 15px;
+}
+
+.card-image {
+    width: 100%;
+    display: block:
+}
+
+.subjectHeaders{
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+}

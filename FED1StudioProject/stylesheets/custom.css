@@ -20,9 +20,9 @@ footer {
     padding: 1%;
 }
 
-footer a {
-    color: lightgreen;
-}
+    footer a {
+        color: lightgreen;
+    }
 
 #sloganStyle {
     font-style: italic;
@@ -41,13 +41,16 @@ footer a {
 
 .topHeadingStyle {
     text-align: right;
-    color: indigo;
+    color: lightgreen;
+    background-color: indigo;
 }
 
     .topHeadingStyle i {
         padding-left: 15px;
         padding-right: 25px;
-        padding-top: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 15px;
     }
 
 nav a:hover, a:active, a:focus {
@@ -72,7 +75,18 @@ nav ul li a {
     text-decoration: none;
 }
 
-@media screen and (max-width: 850px) {
+nav a.pull-right {
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: none;
+}
+
+/*Hamburger Menu (Classes)*/
+
+@media screen and (max-width: 900px) {
 
     nav ul#nav-list {
         display: none;
@@ -81,10 +95,6 @@ nav ul li a {
     nav a.pull-right {
         display: inline-block;
     }
-
-    /*Our script at the bottom of jsintro adds the .expanded class to #nav-list when
-        the hamburger button is clicked. This CSS will 'expand' the menu.
-    */
 
     nav ul#nav-list.expanded {
         float: none;
@@ -102,14 +112,7 @@ nav ul li a {
                 font-size: 1em;
             }
 
-    nav li.dropdown-menu ul.dropdown-menu {
-        width: 50%;
-        float: none;
-        margin: auto;
-        position: static;
-    }
 }
-
 
 .selected {
     background-color: #71C2FF;
@@ -145,7 +148,6 @@ div.galleryItem a:hover {
 #cssRightColumn {
     width: 75%;
     float: right;
-
 }
 
 #cssFloatLeft {
@@ -172,9 +174,9 @@ div.galleryItem a:hover {
     float: right;
 }
 
-#cssRightColumn h2{
-    padding-top: 82px;
-}
+    #cssRightColumn h2 {
+        padding-top: 82px;
+    }
 
 #cssLeftColumn {
     width: 75%;
@@ -182,7 +184,6 @@ div.galleryItem a:hover {
     border-right: 1px dashed teal;
     box-sizing: border-box;
     padding-bottom: 25px;
-    /*Changes the way width and height are figured. With border-box you are saying that the 75% width includes not only content but also padding & border*/
 }
 
 .teamNav {
@@ -194,13 +195,15 @@ div.galleryItem a:hover {
         padding: .50em;
     }
 
-aside h2{
+aside h2 {
     padding: 25px;
 }
 
+/*Tables (Classes)*/
+
 table, tr, td, th {
     border: 1px solid black;
-    border-collapse: collapse; /*avoids duplicate adjacent borders inside of a table.*/
+    border-collapse: collapse;
 }
 
 table {
@@ -233,6 +236,8 @@ tbody tr:nth-child(even) {
     background-color: lightsalmon;
 }
 
+/*Cards (Classes)*/
+
 .cards {
     max-width: 1000px;
     margin: 0 auto;
@@ -249,12 +254,10 @@ tbody tr:nth-child(even) {
     width: 235px;
 }
 
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
 
-/* Adda some padding inside the card container */
 .container {
     padding: 2px 2px;
     width: 235px;
@@ -263,7 +266,7 @@ tbody tr:nth-child(even) {
 
 .card-text {
     word-wrap: break-word;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 5px 0px 5px;
 }
 
 .card-image {
@@ -271,9 +274,67 @@ tbody tr:nth-child(even) {
     display: block:
 }
 
-.subjectHeaders{
+.subjectHeaders {
     margin: 0 auto;
     padding: 15px;
     text-align: center;
     font-size: 28px;
+}
+
+/*Side Navigation (Classes)*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1030;
+    top: 0;
+    right: 0;
+    background-color: #71C2FF;
+    opacity: .95;
+    overflow-x: hidden;
+    padding-top: 100px;
+    transition: .5s;
+}
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: blackS;
+        display: block;
+        transition: .3s;
+    }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+.close-btn {
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+.button {
+    font-family: sans-serif;
+    background: rgba(75,0,130,.5);
+    height: 100%;
+    width: 20px;
+    z-index: 1030;
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.vertical-text {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    writing-mode: vertical-lr;
+    color: white;
+    font-weight: bold;
 }

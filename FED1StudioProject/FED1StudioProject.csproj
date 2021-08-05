@@ -67,7 +67,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\EstatePic.jpg" />
     <Content Include="images\EthicsPic.jpg" />
+    <Content Include="images\InvestmentPic.jpg" />
+    <Content Include="images\RetirementPic.jpg" />
+    <Content Include="images\RiskPic.jpg" />
+    <Content Include="images\TaxPic.jpg" />
     <Content Include="Resources.html" />
     <Content Include="Contact.html" />
     <Content Include="favicon.ico" />
@@ -78,6 +83,7 @@
     <Content Include="images\PeggyHill.jpg" />
     <Content Include="images\RogerSack.jpg" />
     <Content Include="images\RustyShackleford.jpg" />
+    <Content Include="scripts\main.js" />
     <Content Include="stylesheets\custom.css" />
     <Content Include="Team.html" />
     <Content Include="Classes.html" />
@@ -96,9 +102,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="scripts\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

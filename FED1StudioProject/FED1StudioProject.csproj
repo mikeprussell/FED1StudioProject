@@ -67,25 +67,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="images\Classroom.jpg" />
+    <Content Include="favicon.ico" />
+    <Content Include="images\Background.jpg" />
     <Content Include="images\ClassroomMain.jpg" />
     <Content Include="images\EstatePic.jpg" />
     <Content Include="images\EthicsPic.jpg" />
-    <Content Include="images\InvestmentPic.jpg" />
+    <Content Include="images\FinCELogo.png" />
+    <Content Include="images\InvestmentPic.png" />
+    <Content Include="images\IrvBennet.png" />
+    <Content Include="images\JennyMedina.png" />
     <Content Include="images\RetirementPic.jpg" />
     <Content Include="images\RiskPic.jpg" />
+    <Content Include="images\RogerSack.png" />
     <Content Include="images\TaxPic.jpg" />
+    <Content Include="images\Why1.png" />
+    <Content Include="images\Why2.png" />
     <Content Include="Resources.html" />
     <Content Include="Contact.html" />
-    <Content Include="favicon.ico" />
     <Content Include="images\BillDauterive.jpg" />
-    <Content Include="images\icons8-literature-64.png" />
     <Content Include="images\LuannePlatter.jpg" />
     <Content Include="images\NancyGribble.jpg" />
     <Content Include="images\PeggyHill.jpg" />
-    <Content Include="images\RogerSack.jpg" />
     <Content Include="images\RustyShackleford.jpg" />
     <Content Include="scripts\main.js" />
+    <Content Include="scripts\validation.js" />
     <Content Include="stylesheets\custom.css" />
     <Content Include="Team.html" />
     <Content Include="Classes.html" />

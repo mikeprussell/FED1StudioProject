@@ -17,7 +17,7 @@
         <i class="fa fa-instagram" aria-hidden="true"></i>
     </header>
     <header>
-        <img id="cssLogoFloatLeft" src="images/icons8-literature-64.png" alt="FinCE Logo" />
+        <img id="cssLogoFloatLeft" src="images/FinCELogo.png" alt="FinCE Logo" width="60" height="60" />
         <h1 class="headingStyle">
             FinCE
             <div id="sloganStyle">
@@ -28,31 +28,70 @@
         <hr size="4" width="100%" color="#71C2FF">
     </header>
     <nav>
+
+        <!-- Hamburger Button -->
+        <a href="javascript:void(0)" class="pull-right" onclick="toggleNav()" id="menu-btn">
+            &#9776;
+        </a>
+
         <ul id="nav-list">
             <li>
                 <a href="index.html">Home</a>
-            </li>
-            <li class="selected">
-                <a href="Contact.html">Contact</a>
-            </li>
-            <li>
-                <a href="Team.html">Our Team</a>
             </li>
             <li>
                 <a href="Classes.html">Classes</a>
             </li>
             <li>
+                <a href="Team.html">Our Team</a>
+            </li>
+            <li>
                 <a href="Resources.html">Resources</a>
+            </li>
+            <li class="selected">
+                <a href="Contact.html">Contact</a>
             </li>
         </ul>
     </nav>
     <main>
-        <h2>
-            Contact Us
-        </h2>
-        <p>
-            Please call 888-888-8888 to speak with an admissions counselor.
-        </p>
+        <h2 class="centerContent">Contact Us</h2> 
+        <p>Phone: 888-888-8888 to speak with an admissions counselor.</p>
+        <p>Email: info@fince.com</p>
+        <p>Address: 920 Main St Suite 1200, Kansas City, MO 64105</p>
+        <!-- TODO style Contact Form -->
+        <div>
+            <form action="#" method="get" onsubmit="validateForm(event)">
+                <div class= "contactContainer">
+                        <div class="form-group">
+                            <input type="text" id="tbName" name="name" class="form-control" placeholder="Name" />
+                            <span id="rfvName" class="invalid"></span>
+                        </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" id="tbEmail" name="email" class="form-control" placeholder="Email" />
+                            <span id="rfvEmail" class="invalid"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <input type="text" id="tbSubject" name="subject" class="form-control" placeholder="Subject" />
+                            <span id="rfvSubject" class="invalid"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <textarea id="tbMessage" name="message" class="form-control" placeholder="Message"></textarea>
+                            <span id="rfvMessage" class="invalid"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-success" value="Send Message" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
         Email link: <a href="mailto: mikeprussell@outlook.com">
@@ -63,8 +102,15 @@
             913-888-8888
         </a>
         <br />
-        &copy; Copyright 2021 FinCE. All Rights Reserved.
+        <div class="copyRight">
+            &copy; Copyright 2021 FinCE. All Rights Reserved.
+        </div>
     </footer>
+
     <script src="scripts/main.js"></script>
+
+    <!-- JavaScript for Validation -->
+    <script src="scripts/validation.js"></script>
+
 </body>
 </html>

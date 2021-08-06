@@ -87,6 +87,7 @@
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\dynamictheme.js" />
     <Content Include="scripts\main.js" />
+    <Content Include="stylesheets\bootstrap-darkly-theme.css" />
     <Content Include="stylesheets\custom.css" />
     <Content Include="Team.html" />
     <Content Include="Classes.html" />

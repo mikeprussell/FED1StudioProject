@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\Classroom.jpg" />
     <Content Include="images\EstatePic.jpg" />
     <Content Include="images\EthicsPic.jpg" />
     <Content Include="images\InvestmentPic.jpg" />
@@ -83,11 +84,7 @@
     <Content Include="images\PeggyHill.jpg" />
     <Content Include="images\RogerSack.jpg" />
     <Content Include="images\RustyShackleford.jpg" />
-    <Content Include="scripts\bootstrap.js" />
-    <Content Include="scripts\bootstrap.min.js" />
-    <Content Include="scripts\dynamictheme.js" />
     <Content Include="scripts\main.js" />
-    <Content Include="stylesheets\bootstrap-darkly-theme.css" />
     <Content Include="stylesheets\custom.css" />
     <Content Include="Team.html" />
     <Content Include="Classes.html" />

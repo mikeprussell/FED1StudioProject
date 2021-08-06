@@ -93,7 +93,7 @@
                 <div class="clear"></div>
                 <h2>Administration</h2>
                 <p>
-                    <img id="cssFloatLeft" src="images/LuannePlatter.jpg" alt="LuannePlatter" />
+                    <img id="cssFloatLeft" class="img-responsive thumb" src="images/LuannePlatter.jpg" alt="LuannePlatter" />
                     <div class="setWidth">
                         Luanne Platter
                         <br />
@@ -106,7 +106,7 @@
                 <div class="clear"></div>
                 <h2>Sales</h2>
                 <p>
-                    <img id="cssFloatLeft" src="images/RustyShackleford.jpg" alt="Rusty Shackleford" />
+                    <img id="cssFloatLeft" class="img-responsive thumb" src="images/RustyShackleford.jpg" alt="Rusty Shackleford" />
                     <div class="setWidth">
                         Rusty Shackleford
                         <br />
@@ -116,7 +116,7 @@
                 <div class="clear"></div>
                 <h2>Instructors</h2>
                 <p>
-                    <img id="cssFloatLeft" src="images/BillDauterive.jpg" alt="Bill Dauterive" />
+                    <img id="cssFloatLeft" class="img-responsive thumb" src="images/BillDauterive.jpg" alt="Bill Dauterive" />
                     <div class="setWidth">
                         Bill Dauterive PhD, MSFS, CFP®, RICP®
                         <br />
@@ -128,7 +128,7 @@
                 </p>
                 <div class="clear"></div>
                 <p>
-                    <img id="cssFloatLeft" src="images/PeggyHill.jpg" alt="Peggy Hill" />
+                    <img id="cssFloatLeft" class="img-responsive thumb" src="images/PeggyHill.jpg" alt="Peggy Hill" />
                     <div class="setWidth">
                         Peggy Hill LLM, CFP®, AEP®
                         <br />
@@ -144,10 +144,18 @@
         <div class="clear"></div>
     </main>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Lightbox Container -->
+    <div id="lightbox-container">
+        <p>
+            Click anywhere to close.
+        </p>
 
-    <script src="scripts/main.js"></script>
+        <!-- Lightbox Content -->
+        <!-- Container for our images -->
+        <div id="lightbox-content">
+            <!-- <img> tag will be inserted here when a thumbnail is clicked  -->
+        </div>
+    </div>
 
     <footer>
         Email link: <a href="mailto: mikeprussell@outlook.com">
@@ -160,6 +168,14 @@
         <br />
         &copy; Copyright 2021 FinCE. All Rights Reserved.
     </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Bootstrap 3.3.7 minified JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
     <script src="scripts/main.js"></script>
+
 </body>
 </html>

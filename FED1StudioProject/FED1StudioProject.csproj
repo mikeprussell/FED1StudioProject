@@ -83,6 +83,9 @@
     <Content Include="images\PeggyHill.jpg" />
     <Content Include="images\RogerSack.jpg" />
     <Content Include="images\RustyShackleford.jpg" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\dynamictheme.js" />
     <Content Include="scripts\main.js" />
     <Content Include="stylesheets\custom.css" />
     <Content Include="Team.html" />

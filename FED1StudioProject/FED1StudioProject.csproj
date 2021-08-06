@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\Classroom.jpg" />
+    <Content Include="images\ClassroomMain.jpg" />
     <Content Include="images\EstatePic.jpg" />
     <Content Include="images\EthicsPic.jpg" />
     <Content Include="images\InvestmentPic.jpg" />

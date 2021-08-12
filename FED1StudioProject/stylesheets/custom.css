@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Roboto:wght@500&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&family=Montserrat&display=swap');
 
 /*
     Website custom colors
@@ -37,14 +37,15 @@ footer {
     color: indigo;
     font-size: medium;
     text-shadow: none;
+    font-weight: bold;
 }
 
 .headingStyle {
     font-weight: bold;
     margin: 0;
-    padding: .7%;
+    padding: 10px 0px 0px 5px;
     text-shadow: 2px 2px 0px indigo;
-    font-size: 36px;
+    font-size: 40px;
 }
 
 .topHeadingStyle {
@@ -61,6 +62,25 @@ footer {
         font-size: 15px;
     }
 
+.jumbotron {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 32px;
+    margin: 0 auto;
+    width: 85%;
+}
+
+hr {
+    margin-top: 20px;
+}
+
+form {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 60%;
+    margin: 0 auto;
+}
+
 /*h4 (Contact)*/
 
 h4 {
@@ -70,71 +90,125 @@ h4 {
 /*Navigation (All Pages)*/
 
 nav {
-    padding-bottom: 30px;
-    font-family: Roboto;
-}
-
-nav a:hover, a:active, a:focus {
-    text-decoration: none;
-    
-}
-
-nav li:hover {
-    background-color: lightgreen;
-    border-radius: 25px;
-}
-
-nav li {
-    display: inline-block;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-size: 18px;
-}
-
-nav ul li a {
-    display: block;
-    color: black;
-    text-decoration: none;
-}
-
-nav a.pull-right {
+    padding-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    color: #fff;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 1.5em;
-    display: none;
 }
+
+    nav a:hover, a:active, a:focus {
+        text-decoration: none;
+    }
+
+    nav li:hover {
+        background-color: lightgreen;
+        border-radius: 25px;
+    }
+
+    nav li {
+        display: inline-block;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 15px;
+    }
+
+    nav ul li a {
+        display: block;
+        color: black;
+        text-decoration: none;
+    }
+
+    nav a.pull-right {
+        font-weight: bold;
+        color: #fff;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 1.5em;
+        display: none;
+    }
 
 /*Hamburger Menu (All Pages)*/
 
 @media screen and (max-width: 850px) {
 
-    nav ul#nav-list {
-        display: none;
+    .nav-list li {
+        opacity: 1;
     }
 
-    nav a.pull-right {
+    .nav-list {
+        font-weight: bold;
+        color: #fff;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 1.5em;
         display: inline-block;
         color: indigo;
+        transform: translateX(100%);
+        transition: transform .05s ease-in;
     }
 
-    nav ul#nav-list.expanded {
-        float: none;
-        clear: both;
-        display: block;
-    }
-
-        nav ul#nav-list.expanded li {
+        .nav-list.expanded {
+            float: none;
+            clear: both;
             display: block;
         }
 
-            nav ul#nav-list.expanded li a {
+            .nav-list.expanded li {
                 display: block;
-                text-align: center;
-                font-size: 1em;
             }
 
+    #nav-list.expanded li a {
+        display: block;
+        text-align: center;
+        font-size: 1em;
+        padding: 15px;
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        right: 30px;
+        cursor: pointer;
+    }
+
+        .burger div {
+            width: 25px;
+            height: 3px;
+            margin: 5px;
+            background-color: indigo;
+            transition: all 0.3 ease;
+        }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+.burger {
+    display: inline-block;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toogle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px));
+}
+
+.toogle .line1 {
+    opacity: 0;
+}
+
+.toogle .line1 {
+    transform: rotate(45deg) translate(-5px,-6px));
 }
 
 .selected {
@@ -150,22 +224,14 @@ aside h2 {
     padding: 2%;
 }
 
-div.galleryItem:hover {
-    border: 1px solid lightsalmon;
-}
-
-div.galleryItem img {
-    width: 100%;
-    height: auto;
-}
-
-div.galleryItem a:hover {
-    background-color: lightsalmon;
-}
-
 .centerContent {
     margin: 0 auto;
     width: 85%;
+}
+
+.centerContent95 {
+    margin: 0 auto;
+    width: 95%;
 }
 
 .centerContent60 {
@@ -194,7 +260,7 @@ div.galleryItem a:hover {
 
 #cssLogoFloatLeft {
     float: left;
-    padding-top: 12px;
+    padding-top: 16px;
     padding-right: 10px;
     padding-left: 15px;
 }
@@ -208,7 +274,7 @@ div.galleryItem a:hover {
 }
 
 #cssRightColumn {
-    width: 25%;
+    width: 20%;
     float: right;
 }
 
@@ -217,7 +283,7 @@ div.galleryItem a:hover {
     }
 
 #cssLeftColumn {
-    width: 75%;
+    width: 80%;
     float: left;
     border-right: 1px dashed teal;
     box-sizing: border-box;
@@ -315,12 +381,12 @@ tbody tr:nth-child(even) {
 
 .card-text {
     word-wrap: break-word;
-    padding: 0px 5px 0px 5px;
+    padding: 0.5px 5px 0.5px 5px;
 }
 
 .card-image {
     width: 100%;
-    display: block:
+    display: block;
 }
 
 .subjectHeaders {
@@ -430,19 +496,21 @@ input[type=text], select, textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 6px;
     resize: vertical;
-    font-family: Roboto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 input[type=submit] {
     background-color: indigo;
     color: white;
-    padding: 12px 20px;
+    padding: 20px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
 }
 
     input[type=submit]:hover {

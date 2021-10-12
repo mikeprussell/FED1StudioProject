@@ -27,22 +27,22 @@ navSlide();
 
 //Toggle Hamburger Menu Script
 
-//function toggleNav() {
-//    let navList = document.getElementById('nav-list');
-//    navList.classList.toggle('expanded');
+function toggleNav() {
+    let navList = document.getElementById('nav-list');
+    navList.classList.toggle('expanded');
 
-//    //Toggle Hamburger button/Close Button
+    //Toggle Hamburger button/Close Button
 
-//    let btnMenu = document.getElementById('menu-btn');
+    let btnMenu = document.getElementById('menu-btn');
 
-//    if (navList.classList.contains('expanded')) {
-//        btnMenu.innerHTML = "&times;";
-//    }
-//    else {
-//        btn.Menu.innerHTML = "&#9776;";
+    if (navList.classList.contains('expanded')) {
+        btnMenu.innerHTML = "&times;";
+    }
+    else {
+        btn.Menu.innerHTML = "&#9776;";
 
-//    }
-//}
+    }
+}
 
 function openClassesNav() {
     document.getElementById('classes-btn').style.display = "none";
